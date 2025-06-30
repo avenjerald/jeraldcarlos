@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BudMatch</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./styles/budmatch.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="absolute w-full text-white z-1">
+      <div
+        class="flex justify-between items-center max-w-384 p-4 mx-auto md:px-12 md:py-6"
+      >
+        <div class="flex items-center gap-2">
+          <svg
+            height="32px"
+            width="32px"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 48.839 48.839"
+            xml:space="preserve"
+            fill="#FFFFFF"
+            class="md:w-9 md:h-9"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  style="fill: #ffffff"
+                  d="M39.041,36.843c2.054,3.234,3.022,4.951,3.022,6.742c0,3.537-2.627,5.252-6.166,5.252 c-1.56,0-2.567-0.002-5.112-1.326c0,0-1.649-1.509-5.508-1.354c-3.895-0.154-5.545,1.373-5.545,1.373 c-2.545,1.323-3.516,1.309-5.074,1.309c-3.539,0-6.168-1.713-6.168-5.252c0-1.791,0.971-3.506,3.024-6.742 c0,0,3.881-6.445,7.244-9.477c2.43-2.188,5.973-2.18,5.973-2.18h1.093v-0.001c0,0,3.698-0.009,5.976,2.181 C35.059,30.51,39.041,36.844,39.041,36.843z M16.631,20.878c3.7,0,6.699-4.674,6.699-10.439S20.331,0,16.631,0 S9.932,4.674,9.932,10.439S12.931,20.878,16.631,20.878z M10.211,30.988c2.727-1.259,3.349-5.723,1.388-9.971 s-5.761-6.672-8.488-5.414s-3.348,5.723-1.388,9.971C3.684,29.822,7.484,32.245,10.211,30.988z M32.206,20.878 c3.7,0,6.7-4.674,6.7-10.439S35.906,0,32.206,0s-6.699,4.674-6.699,10.439C25.507,16.204,28.506,20.878,32.206,20.878z M45.727,15.602c-2.728-1.259-6.527,1.165-8.488,5.414s-1.339,8.713,1.389,9.972c2.728,1.258,6.527-1.166,8.488-5.414 S48.455,16.861,45.727,15.602z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <div class="pt-sans-bold text-2xl lg:text-[32px]">BudMatch</div>
+        </div>
+        <nav>
+          <ul class="hidden pt-sans-regular text-base lg:flex gap-8 lg:text-xl">
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+        <svg
+          focusable="false"
+          aria-hidden="true"
+          role="presentation"
+          viewBox="0 0 24 24"
+          width="32px"
+          height="32px"
+          class="C($c-ds-text-primary-overlay) cursor-pointer lg:hidden"
+        >
+          <path
+            style="fill: #ffffff"
+            d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"
+          ></path>
+        </svg>
+        <div
+          class="hidden text-[#21262E] lg:flex pt-sans-bold text-xl bg-white py-4 px-12 rounded-4xl cursor-pointer"
+        >
+          Download
+        </div>
+      </div>
+    </header>
+    <section id="hero-banner" class="relative text-white">
+      <div
+        class="flex justify-center items-end absolute w-full h-screen bg-black/30"
+      >
+        <div class="flex flex-col gap-4 p-4 mb-21 z-1">
+          <p
+            class="pt-sans-regular text-xs mb-3 md:text-lg text-center uppercase tracking-widest"
+          >
+            Life is meant to be bright
+          </p>
+          <h2
+            class="pt-sans-bold text-4xl text-center uppercase tracking-widest"
+          >
+            Your buddy awaits
+          </h2>
+        </div>
+      </div>
+      <video class="w-full h-screen object-cover" autoplay loop muted>
+        <source src="./assets/BudMatch Banner Video.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <article id="testimonials">
+      <div
+        class="flex flex-col gap-6 max-w-384 p-4 mx-auto my-6 md:px-12 md:py-6"
+      >
+        <h2
+          class="pt-sans-bold text-2xl text-[#21262E] uppercase tracking-widest"
+        >
+          Testimonials
+        </h2>
+        <div class="flex flex-col md:flex-row md:justify-between gap-5">
+          <div
+            class="flex flex-col gap-4 border border-[#d4d8de] p-5 rounded-xl"
+          >
+            <div class="flex justify-between">
+              <h3
+                class="w-3/4 pt-sans-bold text-lg text-[#21262E] pb-4 border-b border-[#d4d8de] tracking-wider"
+              >
+                Emily Rowling
+              </h3>
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[2.25rem]"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.8533 9.11599C11.3227 13.9523 7.13913 19.5812 6.30256 26.0029C5.00021 36 13.9404 40.8933 18.4703 36.4967C23.0002 32.1002 20.2848 26.5196 17.0047 24.9942C13.7246 23.4687 11.7187 24 12.0686 21.9616C12.4185 19.9231 17.0851 14.2713 21.1849 11.6392C21.4569 11.4079 21.5604 10.9591 21.2985 10.6187C21.1262 10.3947 20.7883 9.95557 20.2848 9.30114C19.8445 8.72888 19.4227 8.75029 18.8533 9.11599Z"
+                    fill="#d4d8de"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M38.6789 9.11599C31.1484 13.9523 26.9648 19.5812 26.1282 26.0029C24.8259 36 33.7661 40.8933 38.296 36.4967C42.8259 32.1002 40.1105 26.5196 36.8304 24.9942C33.5503 23.4687 31.5443 24 31.8943 21.9616C32.2442 19.9231 36.9108 14.2713 41.0106 11.6392C41.2826 11.4079 41.3861 10.9591 41.1241 10.6187C40.9519 10.3947 40.614 9.95557 40.1105 9.30114C39.6702 8.72888 39.2484 8.75029 38.6789 9.11599Z"
+                    fill="#d4d8de"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <p class="pt-sans-regular text-[#505965] mb-3">
+              I never thought finding my dream dog could be this easy. BudMatch
+              paired me with Luna, a sweet rescue lab, in just a few days. It
+              felt like fate—except smarter. She’s been my best friend ever
+              since.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-4 border border-[#d4d8de] p-5 rounded-xl"
+          >
+            <div class="flex justify-between">
+              <h3
+                class="w-3/4 pt-sans-bold text-lg text-[#21262E] pb-4 border-b border-[#d4d8de] tracking-wider"
+              >
+                Carlos Dale
+              </h3>
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[2.25rem]"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.8533 9.11599C11.3227 13.9523 7.13913 19.5812 6.30256 26.0029C5.00021 36 13.9404 40.8933 18.4703 36.4967C23.0002 32.1002 20.2848 26.5196 17.0047 24.9942C13.7246 23.4687 11.7187 24 12.0686 21.9616C12.4185 19.9231 17.0851 14.2713 21.1849 11.6392C21.4569 11.4079 21.5604 10.9591 21.2985 10.6187C21.1262 10.3947 20.7883 9.95557 20.2848 9.30114C19.8445 8.72888 19.4227 8.75029 18.8533 9.11599Z"
+                    fill="#d4d8de"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M38.6789 9.11599C31.1484 13.9523 26.9648 19.5812 26.1282 26.0029C24.8259 36 33.7661 40.8933 38.296 36.4967C42.8259 32.1002 40.1105 26.5196 36.8304 24.9942C33.5503 23.4687 31.5443 24 31.8943 21.9616C32.2442 19.9231 36.9108 14.2713 41.0106 11.6392C41.2826 11.4079 41.3861 10.9591 41.1241 10.6187C40.9519 10.3947 40.614 9.95557 40.1105 9.30114C39.6702 8.72888 39.2484 8.75029 38.6789 9.11599Z"
+                    fill="#d4d8de"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <p class="pt-sans-regular text-[#505965] mb-3">
+              I was just browsing when I stumbled on Max’s profile. BudMatch
+              made the process smooth, from submitting my application to
+              scheduling the meetup. One tail wag and I was sold!
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-4 border border-[#d4d8de] p-5 rounded-xl"
+          >
+            <div class="flex justify-between">
+              <h3
+                class="w-3/4 pt-sans-bold text-lg text-[#21262E] pb-4 border-b border-[#d4d8de] tracking-wider"
+              >
+                Nina Martin
+              </h3>
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[2.25rem]"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.8533 9.11599C11.3227 13.9523 7.13913 19.5812 6.30256 26.0029C5.00021 36 13.9404 40.8933 18.4703 36.4967C23.0002 32.1002 20.2848 26.5196 17.0047 24.9942C13.7246 23.4687 11.7187 24 12.0686 21.9616C12.4185 19.9231 17.0851 14.2713 21.1849 11.6392C21.4569 11.4079 21.5604 10.9591 21.2985 10.6187C21.1262 10.3947 20.7883 9.95557 20.2848 9.30114C19.8445 8.72888 19.4227 8.75029 18.8533 9.11599Z"
+                    fill="#d4d8de"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M38.6789 9.11599C31.1484 13.9523 26.9648 19.5812 26.1282 26.0029C24.8259 36 33.7661 40.8933 38.296 36.4967C42.8259 32.1002 40.1105 26.5196 36.8304 24.9942C33.5503 23.4687 31.5443 24 31.8943 21.9616C32.2442 19.9231 36.9108 14.2713 41.0106 11.6392C41.2826 11.4079 41.3861 10.9591 41.1241 10.6187C40.9519 10.3947 40.614 9.95557 40.1105 9.30114C39.6702 8.72888 39.2484 8.75029 38.6789 9.11599Z"
+                    fill="#d4d8de"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <p class="pt-sans-regular text-[#505965] mb-3">
+              After losing my previous dog, I wasn’t sure I was ready. But
+              BudMatch understood what I needed. They introduced me to Bella, a
+              shy but lovable shepherd mix. Now we’re healing together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer class="px-3 py-5 md:px-5">
+      <div
+        class="grid grid-rows-2 grid-cols-2 gap-x-6 gap-y-10 max-w-384 px-6 py-4 mx-auto my-3 border-b border-[#d4d8de] md:grid-rows-1 md:grid-cols-4 md:px-16 md:py-4"
+      >
+        <ul class="flex flex-col gap-2 pt-sans-regular text-[#21262E]">
+          <h3 class="pt-sans-bold text-xl tracking-wider">Legal</h3>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Intellectual Property</a></li>
+        </ul>
+        <ul class="flex flex-col gap-2 pt-sans-regular text-[#21262E]">
+          <h3 class="pt-sans-bold text-xl tracking-wider">Careers</h3>
+          <li><a href="#">Careers Portal</a></li>
+          <li><a href="#">Influencers</a></li>
+        </ul>
+        <ul class="flex flex-col gap-2 pt-sans-regular text-[#21262E]">
+          <h3 class="pt-sans-bold text-xl tracking-wider">Support</h3>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Promo Code</a></li>
+        </ul>
+        <div class="flex flex-col gap-2">
+          <h3 class="pt-sans-bold text-xl tracking-wider text-[#21262E]">
+            Social
+          </h3>
+          <ul class="flex gap-2 pt-sans-regular text-[#21262E]">
+            <li>
+              <a href="#">
+                <svg
+                  focusable="false"
+                  aria-hidden="true"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="Sq(28px)"
+                >
+                  <path
+                    d="M16.563 8.424h-3.12V6.378c0-.769.51-.948.868-.948h2.202V2.05l-3.033-.012c-3.366 0-4.132 2.52-4.132 4.133v2.252H7.4v3.482h1.947v9.852h4.095v-9.852h2.763l.357-3.482z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  focusable="false"
+                  aria-hidden="true"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="Sq(28px)"
+                >
+                  <path
+                    d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  focusable="false"
+                  aria-hidden="true"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="Sq(28px)"
+                >
+                  <path
+                    d="M12.205 2.039h3.407s-.19 4.376 4.73 4.684v3.382s-2.625.165-4.73-1.442l.036 6.984a6.314 6.314 0 11-6.314-6.313h.886v3.458a2.87 2.87 0 102.016 2.741l-.031-13.494z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center gap-6 max-w-384 px-6 py-4 mx-auto my-3 md:flex-row md:px-16 md:py-4"
+      >
+        <h2 class="pt-sans-bold text-xl text-[#21262E] tracking-wider">
+          Get the app!
+        </h2>
+        <div class="flex gap-6 h-12">
+          <a href="#"
+            ><img
+              class="h-full"
+              src="./assets/Apple app store button.svg"
+              alt="App Store"
+          /></a>
+          <a href="#"
+            ><img
+              class="h-full"
+              src="./assets/Google play button.png"
+              alt="Play Store"
+          /></a>
+        </div>
+      </div>
+      <div
+        class="pt-sans-regular text-sm text-[#505965] max-w-384 px-6 py-4 mx-auto my-3 md:px-16 md:py-4"
+      >
+        <p class="mb-3">
+          Single people, listen up: If you’re looking for love, want to start
+          dating, or just keep it casual, you need to be on Tinder. With over 55
+          billion matches made, it’s the place to be to meet your next best
+          match. Let’s be real, the dating landscape looks very different today,
+          as most people are meeting online. With Tinder, the world’s most
+          popular free dating app, you have millions of other single people at
+          your fingertips and they’re all ready to meet someone like you.
+          Whether you’re straight or in the LGBTQIA community, Tinder’s here to
+          bring you all the sparks.
+        </p>
+        <p class="mb-3">
+          There really is something for everyone on Tinder. Want to get into a
+          relationship? You got it. Trying to find some new friends? Say no
+          more. New kid on campus and looking to make the most of your college
+          experience? Tinder U’s got you covered. Tinder isn’t your average
+          dating site — it’s the most diverse dating app, where adults of all
+          backgrounds and experiences are invited to make connections, memories,
+          and everything in between.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center gap-4 max-w-384 px-6 py-4 border-t border-[#d4d8de] md:flex-row md:justify-between md:px-16 md:py-4"
+      >
+        <ul class="flex text-sm text-[#505965]">
+          <li><a href="#">FAQ</a><span class="mx-2">/</span></li>
+          <li><a href="#">Terms</a><span class="mx-2">/</span></li>
+          <li><a href="#">Cookie Policy</a><span class="mx-2">/</span></li>
+          <li><a href="#">Privacy Settings</a></li>
+        </ul>
+        <div class="text-sm text-[#505965]">
+          © 2025 BudMatch, All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,601 @@
+/* Fonts */
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* General */
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-transform: uppercase;
+  margin: 0;
+  background-color: #faf9f6;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p,
+ul,
+div {
+  font-size: 12px;
+  line-height: 3rem;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 990px) {
+  .container {
+    padding: 2.5rem 5rem;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+/* Section - Navigation */
+
+#navigation {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.title {
+  color: white;
+}
+
+#navigation a:-webkit-any-link,
+#hero a:-webkit-any-link,
+#extra-section a:-webkit-any-link,
+footer a:-webkit-any-link,
+#breadcrumb a:-webkit-any-link {
+  color: white;
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  list-style: none;
+  padding: 0;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+@media (min-width: 990px) {
+  .nav-container {
+    padding: 2.5rem 5rem;
+  }
+}
+
+/* Section - Hero */
+
+#hero {
+  position: relative;
+}
+
+#hero a {
+  width: fit-content;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(25, 25, 25, 0.3);
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.hero-info p {
+  width: 100%;
+}
+
+.button {
+  border-radius: 0;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 10px;
+  width: fit-content;
+}
+
+.hero-content img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media (min-width: 990px) {
+}
+
+/* Section - Projects */
+
+#projects {
+  margin: 3.5rem auto;
+}
+
+#projects a:-webkit-any-link {
+  color: black;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+#project-item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.project-img .secondary {
+  display: none;
+}
+
+.project-img:hover .primary {
+  display: none;
+}
+
+.project-img:hover .secondary {
+  display: block;
+}
+
+.project-info {
+  padding: 0 2rem 2rem;
+}
+
+.projects-container img {
+  display: block;
+  width: 100%;
+}
+
+.brand-logos h3 {
+  background-color: black;
+  color: white;
+  margin: 0 auto 5rem;
+  padding: 0.5rem 2rem;
+  width: fit-content;
+}
+
+.brand-logos ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.brand-logos li {
+  width: 100%;
+}
+
+.brand-logos img {
+  width: 50%;
+  height: auto;
+}
+
+.brand-logos li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 990px) {
+  #projects {
+    margin: 5rem auto;
+  }
+  .projects-container {
+    margin-bottom: 7.5rem;
+  }
+  #project-item {
+    flex-direction: row;
+  }
+  .project-info {
+    width: 50%;
+    padding: 2rem;
+  }
+  .projects-container a {
+    width: 50%;
+  }
+  .brand-logos h3 {
+    margin: 0 auto 7.5rem;
+  }
+  .brand-logos ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Section - About */
+
+#about {
+  background-color: black;
+}
+
+#about h2,
+#about h3,
+#about p,
+#about ul {
+  color: white;
+}
+
+.about-container {
+  max-width: 120rem;
+  margin: auto;
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.interests-img {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.interest-item {
+  width: 100%;
+  position: relative;
+}
+
+.interest-item .secondary {
+  display: none;
+}
+
+.interest-item:hover .primary {
+  display: none;
+}
+
+.interest-item:hover .secondary {
+  display: block;
+}
+
+.interest-item img {
+  display: block;
+  width: 100%;
+}
+
+.item-name {
+  color: white;
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@media (min-width: 990px) {
+  .about-container {
+    padding: 7.5rem 5rem;
+    gap: 7.5rem;
+  }
+
+  .about-container h2 {
+    width: 30%;
+  }
+
+  .about-primary {
+    display: flex;
+  }
+
+  .about-content {
+    width: 70%;
+  }
+  .interests-img {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Section - Contact */
+
+#contact {
+  margin: 3.5rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact a:-webkit-any-link {
+  color: black;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-container > div svg {
+  display: none;
+  width: 24px;
+}
+
+@media (min-width: 990px) {
+  #contact {
+    margin: 5rem auto;
+    flex-direction: row;
+  }
+
+  #contact h2 {
+    width: 30%;
+  }
+
+  .contact-container {
+    width: 70%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Section - Extra */
+
+#extra-section {
+  display: none;
+}
+
+#extra-section p {
+  text-align: justify;
+  margin: 0 0 2.5rem 0;
+}
+
+.extra-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem;
+}
+
+#extra-section a {
+  display: block;
+  width: fit-content;
+}
+
+.tooltip {
+  border-bottom: 1px dotted black;
+  position: relative;
+  cursor: help;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 15rem;
+  height: auto;
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 12px;
+  position: absolute;
+  border-radius: 8px 8px 0 8px;
+  right: 0;
+  bottom: 16px;
+  line-height: normal;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+@media (min-width: 990px) {
+  .extra-section-content {
+    flex-direction: row;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+@media (min-width: 990px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Page - Resume */
+
+#resume-summary,
+#resume-skills,
+#resume-work-experience,
+#resume-education {
+  margin: 3.5rem auto;
+}
+
+#breadcrumb {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  color: white;
+}
+
+#breadcrumb a:-webkit-any-link {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-navigation {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.breadcrumb-navigation ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+#resume-header {
+  position: relative;
+}
+
+#resume-header a:-webkit-any-link {
+  color: white;
+}
+
+.resume-header-content img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.resume-header-overlay {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(25, 25, 25, 0.3);
+}
+
+.resume-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  color: white;
+}
+
+.resume-info p {
+  width: 100%;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-experience-container,
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.work-experience,
+.education {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.work-experience img,
+.education img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  background-color: white;
+}
+
+@media (min-width: 990px) {
+  #resume-summary,
+  #resume-skills,
+  #resume-work-experience,
+  #resume-education {
+    margin: 5rem auto;
+  }
+  .skills-container {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .technical-skills {
+    width: 50%;
+  }
+
+  .soft-skills {
+    width: 50%;
+  }
+
+  .work-experience img,
+  .education img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
